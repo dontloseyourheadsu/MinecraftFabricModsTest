@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testingmod",
+	"version": "${version}",
+	"name": "TestingMod",
+	"description": "This is a test mod to test features",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/testingmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.test.TestingMod"
+		],
+		"client": [
+			"name.test.TestingModClient"
+		],
+		"fabric-datagen": [
+			"name.test.TestingModDataGenerator"
+		]
+	},
+	"mixins": [
+		"testingmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
